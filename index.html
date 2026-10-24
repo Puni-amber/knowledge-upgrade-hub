@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b6658">
+<title>Knowledge Upgrade Hub</title>
+<style>
+:root{--ink:#16324a;--muted:#64758a;--green:#0b7667;--green2:#e4f4ee;--line:#e5eaf0;--bg:#f5f7f8;--card:#fff;--blue:#eaf3ff;--lilac:#f2ecff;--peach:#fff1e4;--teal:#e5f7f8;--shadow:0 8px 28px rgba(20,43,64,.055)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,textarea,select{font:inherit}button{cursor:pointer}.app{min-height:100vh;display:grid;grid-template-columns:235px 1fr}.sidebar{background:#fff;border-right:1px solid var(--line);padding:24px 16px;display:flex;flex-direction:column;gap:22px}.brand{display:flex;gap:11px;align-items:center;padding:2px 8px 12px}.brandmark{width:39px;height:39px;border-radius:14px;background:var(--green2);color:var(--green);display:grid;place-items:center;font-size:22px}.brand strong{display:block;font-size:17px;line-height:1.1}.brand small{color:var(--muted)}nav{display:grid;gap:5px}nav button{border:0;background:transparent;text-align:left;padding:11px 12px;border-radius:10px;color:#36506a;display:flex;gap:12px;align-items:center}nav button.active,nav button:hover{background:var(--green2);color:#075e51}.navicon{width:22px;text-align:center;font-size:17px}.sidequote{margin-top:auto;border-top:1px solid var(--line);padding:18px 8px;color:#476078;font-style:italic}.main{min-width:0}.hero{padding:28px clamp(20px,4vw,52px) 26px;background:linear-gradient(110deg,rgba(255,255,255,.97),rgba(255,255,255,.72)),radial-gradient(ellipse at 80% 0%,#e8d9c2,#dcebe6 50%,#e9f0f4);border-bottom:1px solid var(--line)}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.13em;color:var(--green);text-transform:uppercase}.hero h1{font-size:clamp(28px,3.2vw,42px);letter-spacing:-.035em;margin:5px 0 7px}.hero p{margin:0;color:#52667c}.hero .hello{margin-top:19px;font-weight:650;color:var(--ink)}.content{padding:24px clamp(16px,3vw,34px) 40px;max-width:1500px;margin:auto}.grid{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:18px}.stack{display:grid;gap:18px;align-content:start}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow);min-width:0}.card h2,.card h3{margin:0 0 10px}.card h2{font-size:19px}.card h3{font-size:16px}.muted{color:var(--muted)}.row{display:flex;gap:12px;align-items:center}.between{justify-content:space-between}.wrap{flex-wrap:wrap}.grow{flex:1;min-width:0}.pill{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:999px;background:var(--green2);color:#096657;font-size:12px;font-weight:700}.btn{border:1px solid #d9e2e8;background:#fff;color:var(--ink);border-radius:10px;padding:10px 14px;font-weight:700;transition:.15s}.btn:hover{transform:translateY(-1px);box-shadow:0 5px 15px #16324a12}.btn.primary{background:var(--green);color:#fff;border-color:var(--green)}.btn.soft{background:var(--green2);color:#075e51;border-color:transparent}.btn.small{font-size:13px;padding:7px 10px}.btn:disabled{opacity:.5;cursor:not-allowed}.progressbar{height:8px;background:#e8edf0;border-radius:999px;overflow:hidden}.progressbar span{display:block;height:100%;width:0;background:linear-gradient(90deg,#0b7667,#5bbca0);border-radius:999px;transition:width .2s}.today{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}.today h2{margin-bottom:4px}.today .sub{font-size:17px;font-weight:650}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:17px}.metric{background:#f7f9fa;border-radius:12px;padding:12px}.metric strong{display:block;font-size:22px}.metric span{font-size:12px;color:var(--muted)}.phase-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.phase{padding:14px;border-radius:13px;min-height:170px}.phase:nth-child(1){background:var(--green2)}.phase:nth-child(2){background:var(--blue)}.phase:nth-child(3){background:var(--lilac)}.phase:nth-child(4){background:var(--peach)}.phase:nth-child(5){background:var(--teal)}.phase .emoji{font-size:22px}.phase strong{display:block;font-size:13px;line-height:1.35;margin:8px 0}.phase small{color:#51677b}.flow{display:grid;gap:11px}.flowitem{display:grid;grid-template-columns:36px 1fr auto;gap:11px;align-items:center}.num{width:34px;height:34px;border-radius:50%;background:var(--green2);color:var(--green);display:grid;place-items:center;font-weight:800}.flowitem strong{font-size:13px}.flowitem p{margin:1px 0 0;font-size:12px;color:var(--muted)}.quick{display:grid;gap:0}.quick button{border:0;border-bottom:1px solid var(--line);background:transparent;text-align:left;padding:12px 2px;display:flex;align-items:center;gap:10px;color:var(--ink)}.quick button:last-child{border:0}.quick button span:first-child{width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:#eff5f5}.quote{background:linear-gradient(135deg,#e5f5ef,#f0efff);font-size:16px;font-style:italic;color:#235b56}.activity{display:grid;gap:0}.activityrow{padding:11px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center}.activityrow:last-child{border:0}.dot{width:9px;height:9px;border-radius:50%;background:#b9c6ce;flex-shrink:0}.dot.done{background:#27a58a}.activityrow strong{font-size:13px}.activityrow small{display:block;color:var(--muted)}.view{display:none}.view.active{display:block}.daylist{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.daycard{border:1px solid var(--line);border-radius:13px;padding:13px;background:#fff;display:flex;flex-direction:column;gap:7px}.daycard.done{border-color:#8acdbb;background:#f2fbf7}.daycard .daytop{display:flex;justify-content:space-between;gap:8px;align-items:center}.daycard strong{font-size:13px;line-height:1.35}.daycard p{font-size:12px;color:var(--muted);margin:0;flex:1}.field{display:grid;gap:6px;margin:12px 0}.field label{font-size:13px;font-weight:750}.field input,.field textarea,.field select{width:100%;border:1px solid #dbe3e9;border-radius:10px;padding:11px 12px;background:#fff;color:var(--ink)}.field textarea{min-height:130px;resize:vertical}.lesson-body{max-width:820px}.lesson-body h3{margin-top:22px}.lesson-body li{margin:6px 0}.quiz-option{display:block;border:1px solid var(--line);padding:12px;border-radius:10px;margin:8px 0;cursor:pointer}.quiz-option:has(input:checked){border-color:var(--green);background:var(--green2)}.quiz-option input{margin-right:8px}.notice{padding:12px;border-radius:10px;background:#fff8e8;color:#76551b;font-size:13px}.footer{text-align:center;padding:20px;color:#8a98a7;font-size:12px}#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#183d4c;color:#fff;padding:10px 16px;border-radius:10px;box-shadow:var(--shadow);display:none;z-index:10}.mobiletop{display:none}
+@media(max-width:1100px){.phase-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.grid{grid-template-columns:minmax(0,1fr) 250px}.daylist{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){.app{grid-template-columns:1fr}.sidebar{position:sticky;top:0;z-index:5;padding:9px 12px;border-right:0;border-bottom:1px solid var(--line);display:block}.brand{padding:0 5px 8px}.brandmark{width:31px;height:31px}.brand strong{font-size:14px}.brand small,.sidequote{display:none}nav{display:flex;overflow-x:auto;gap:4px}nav button{white-space:nowrap;padding:8px 10px;font-size:12px;gap:6px}.navicon{width:auto}.hero{padding:22px 18px}.content{padding:16px 12px 30px}.grid{grid-template-columns:1fr}.rightcol{grid-template-columns:repeat(2,minmax(0,1fr));display:grid;align-content:start}.rightcol .quickcard{grid-row:span 2}.today{grid-template-columns:1fr}.todayaction{display:flex;gap:10px;align-items:center}.phase-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.phase{min-height:150px}.metrics{grid-template-columns:repeat(3,1fr)}.card{padding:16px}}
+@media(max-width:480px){.phase-grid,.daylist,.rightcol{grid-template-columns:1fr}.rightcol .quickcard{grid-row:auto}.metrics{gap:6px}.metric{padding:9px}.metric strong{font-size:19px}.flowitem{grid-template-columns:34px 1fr auto}.today .sub{font-size:15px}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand"><div class="brandmark">✦</div><div><strong>Knowledge Upgrade</strong><small>Learn · Grow · Lead</small></div></div>
+  <nav id="nav">
+    <button class="active" data-view="home"><span class="navicon">⌂</span>Home</button>
+    <button data-view="daily"><span class="navicon">▣</span>Daily Learning</button>
+    <button data-view="plan"><span class="navicon">▦</span>30-Day Plan</button>
+    <button data-view="progress"><span class="navicon">↗</span>My Progress</button>
+    <button data-view="notes"><span class="navicon">▤</span>Notes & Resources</button>
+    <button data-view="quiz"><span class="navicon">☷</span>Quiz Centre</button>
+  </nav>
+  <div class="sidequote">“You don't have to be perfect. You just have to keep going.” ♡</div>
+</aside>
+<main class="main">
+<header class="hero">
+  <div class="eyebrow">Your 30-day journey</div>
+  <h1>Knowledge Upgrade Programme</h1>
+  <p>Current affairs · Core knowledge · Communication · Critical thinking</p>
+  <div class="hello">Welcome to your learning space ✨</div>
+  <p>Small steps every day. Big changes over time.</p>
+</header>
+<div class="content">
+<section id="view-home" class="view active">
+  <div class="grid">
+    <div class="stack">
+      <div class="card today">
+        <div>
+          <div class="row wrap"><h2>Today's Learning — <span id="todayDayLabel">Day 1</span></h2><span class="pill" id="todayStatus">Ready to start</span></div>
+          <div class="sub" id="todayTitle">Inflation, the Indian Economy & Economic Thinking</div>
+          <p class="muted" id="todayDesc">Understand how price changes affect households, policy and public debate.</p>
+          <div class="row muted" style="margin-top:12px;font-size:13px"><span>◷ 45 minutes</span><span>•</span><span>5 learning steps</span></div>
+        </div>
+        <div class="todayaction"><button class="btn primary" id="startToday">Start Day 1 →</button></div>
+      </div>
+      <div class="card">
+        <div class="row between wrap"><h2>Your 30-Day Journey</h2><span class="muted" id="phaseCount">0 of 30 days complete</span></div>
+        <div class="phase-grid" id="phaseGrid"></div>
+      </div>
+      <div class="grid" style="grid-template-columns:1fr 1fr">
+        <div class="card">
+          <h3>Daily Learning Flow <span class="muted" style="font-weight:500">(45 minutes)</span></h3>
+          <div class="flow">
+            <div class="flowitem"><span class="num">1</span><div><strong>Warm-up & Recall (5 min)</strong><p>Activate what you already know.</p></div><span>›</span></div>
+            <div class="flowitem"><span class="num">2</span><div><strong>Learn (15 min)</strong><p>Concepts, examples and real-world context.</p></div><span>›</span></div>
+            <div class="flowitem"><span class="num">3</span><div><strong>Quiz & Discussion (10 min)</strong><p>Test your understanding and think deeper.</p></div><span>›</span></div>
+            <div class="flowitem"><span class="num">4</span><div><strong>Communication Drill (10 min)</strong><p>Express your thoughts in your own words.</p></div><span>›</span></div>
+            <div class="flowitem"><span class="num">5</span><div><strong>Reflection (5 min)</strong><p>Summarise and retain what you learned.</p></div><span>›</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Learning activity</h3><div class="activity" id="recentActivity"></div>
+          <button class="btn small" style="margin-top:12px" data-goto="plan">View full 30-day plan →</button>
+        </div>
+      </div>
+    </div>
+    <aside class="stack rightcol">
+      <div class="card">
+        <h3>Overall Progress</h3>
+        <div class="row"><div style="font-size:28px;color:var(--green)">◉</div><div class="grow"><strong style="font-size:24px" id="progressCount">0 / 30</strong><span class="muted"> days complete</span></div></div>
+        <div class="progressbar" style="margin-top:12px"><span id="mainProgress"></span></div><div class="muted" id="progressPercent" style="text-align:right;font-size:12px;margin-top:4px">0%</div>
+      </div>
+      <div class="card quote">“The more you know, the better you can choose.” ♡</div>
+      <div class="card quickcard"><h3>Quick Links</h3><div class="quick">
+        <button data-goto="daily"><span>▣</span>Today's Lesson <span style="margin-left:auto">›</span></button>
+        <button data-goto="notes"><span>▤</span>Open Notes <span style="margin-left:auto">›</span></button>
+        <button data-goto="quiz"><span>☷</span>Take a Quiz <span style="margin-left:auto">›</span></button>
+        <button id="chatCurrent"><span>↗</span>Discuss in ChatGPT <span style="margin-left:auto">›</span></button>
+      </div></div>
+      <div class="card" style="background:var(--lilac);border:0;text-align:center"><h3>A little reminder</h3><p>This isn't about knowing everything. It's about becoming curious, informed and confident in any conversation.</p><strong style="font-style:italic">You've got this! ♡</strong></div>
+    </aside>
+  </div>
+</section>
+
+<section id="view-daily" class="view">
+  <div class="card lesson-body">
+    <div class="row between wrap"><div><div class="eyebrow" id="lessonEyebrow">Day 1 · Core knowledge</div><h2 id="lessonTitle">Inflation, the Indian Economy & Economic Thinking</h2></div><span class="pill" id="lessonStatus">Not completed</span></div>
+    <p class="muted" id="lessonSubtitle">45 minutes · Learn, practise, reflect</p>
+    <div id="lessonContent"></div>
+    <div class="row wrap" style="margin-top:22px"><button class="btn" id="lessonChat">Open personalised ChatGPT lesson ↗</button><button class="btn primary" id="completeDay">Mark day complete ✓</button><button class="btn" id="nextDay">Next day →</button></div>
+  </div>
+</section>
+
+<section id="view-plan" class="view">
+  <div class="card">
+    <div class="row between wrap"><div><h2>Your 30-Day Curriculum</h2><p class="muted">Choose any day to open its lesson and ChatGPT learning prompt.</p></div><span class="pill" id="planProgress">0 / 30 complete</span></div>
+    <div class="field"><label for="filterPhase">Filter by learning phase</label><select id="filterPhase"><option value="all">All phases</option><option value="1">Phase 1 · Current affairs</option><option value="2">Phase 2 · Governance & policy</option><option value="3">Phase 3 · Economy & society</option><option value="4">Phase 4 · Communication</option><option value="5">Phase 5 · Strategy & application</option></select></div>
+    <div class="daylist" id="dayList"></div>
+  </div>
+</section>
+
+<section id="view-progress" class="view">
+  <div class="grid">
+    <div class="stack">
+      <div class="card"><h2>Your Progress</h2><p class="muted">Your activity is saved in this browser on this device.</p><div class="metrics"><div class="metric"><strong id="statDone">0</strong><span>Days completed</span></div><div class="metric"><strong id="statQuiz">0</strong><span>Quizzes attempted</span></div><div class="metric"><strong id="statAvg">—</strong><span>Average quiz score</span></div></div><div style="margin-top:18px" class="progressbar"><span id="progressBig"></span></div><p id="progressMessage" class="muted">Your first step starts here.</p></div>
+      <div class="card"><h3>Completed days</h3><div id="completedList" class="activity"></div></div>
+    </div>
+    <div class="card"><h3>Learning reflection</h3><p class="muted">What are you learning about yourself as you go?</p><div class="field"><label for="reflection">My reflection</label><textarea id="reflection" placeholder="What feels clearer? What do I want to practise?"></textarea></div><button class="btn primary" id="saveReflection">Save reflection</button><div class="notice" style="margin-top:18px">Tip: consistency matters more than a perfect score. Revisit difficult topics instead of rushing ahead.</div><button class="btn" style="margin-top:12px" id="exportData">Export my progress & notes</button></div>
+  </div>
+</section>
+
+<section id="view-notes" class="view">
+  <div class="grid">
+    <div class="card">
+      <h2>Notes & Knowledge Library</h2><p class="muted">Capture concepts, examples, questions and useful links.</p>
+      <div class="field"><label for="noteTitle">Note title</label><input id="noteTitle" placeholder="e.g. Inflation — key takeaways"></div>
+      <div class="field"><label for="noteTopic">Topic</label><select id="noteTopic"><option>Current affairs</option><option>Governance & public policy</option><option>Economy & society</option><option>Communication</option><option>Strategy & critical thinking</option><option>Other</option></select></div>
+      <div class="field"><label for="noteBody">Your notes</label><textarea id="noteBody" placeholder="Write the idea in your own words, add examples, questions or links..."></textarea></div>
+      <div class="row wrap"><button class="btn primary" id="saveNote">Save note</button><button class="btn" id="clearNoteForm">Clear form</button></div>
+    </div>
+    <div class="card"><h3>Saved notes</h3><div id="notesList"><p class="muted">Your saved notes will appear here.</p></div></div>
+  </div>
+</section>
+
+<section id="view-quiz" class="view">
+  <div class="card lesson-body">
+    <div class="row between wrap"><div><div class="eyebrow">Quiz centre</div><h2 id="quizTitle">Day 1 knowledge check</h2></div><span class="pill" id="quizCounter">Question 1 of 3</span></div>
+    <p class="muted">Answer from memory first. Feedback helps you learn; it is not an exam.</p>
+    <div id="quizArea"></div>
+    <div class="row wrap" style="margin-top:18px"><button class="btn" id="quizBack" disabled>← Previous</button><button class="btn primary" id="quizNext">Check answer →</button><button class="btn" id="quizChat">Discuss my answers in ChatGPT ↗</button></div>
+    <div id="quizFeedback" style="margin-top:14px"></div>
+  </div>
+</section>
+<div class="footer">Knowledge Upgrade Hub · Learn · Reflect · Grow · Repeat</div>
+</div>
+</main>
+</div>
+<div id="toast"></div>
+<script>
+const curriculum = [
+["Inflation, the Indian Economy & Economic Thinking","Understand inflation, purchasing power and why prices become a public issue.","Economy & society",1],
+["How to Read the News Critically","Separate facts, claims, context, evidence and opinion in a news story.","Current affairs",1],
+["India’s Political System: The Big Picture","Understand the Constitution, executive, legislature and judiciary.","Governance & public policy",1],
+["Parliament, State Assemblies & Lawmaking","Trace how a proposal can become a law and who scrutinises it.","Governance & public policy",1],
+["Federalism: Centre, States & Local Government","Explore which level of government is responsible for what.","Governance & public policy",1],
+["Current Affairs Briefing: India","Build a concise briefing with what happened, why it matters and what comes next.","Current affairs",1],
+["Weekly Review & Explain-It-Back","Recall six days of learning and explain one issue in plain language.","Communication",1],
+["How Government Schemes Work","Follow a public programme from design and funding to delivery.","Governance & public policy",2],
+["Public Policy: Problem, Evidence, Solution","Use a practical framework to assess a policy proposal.","Governance & public policy",2],
+["Elections, Representation & Political Behaviour","Understand constituencies, turnout, representation and voter behaviour.","Governance & public policy",2],
+["Local Government & Community Needs","Explore Panchayati Raj, municipalities and local accountability.","Governance & public policy",2],
+["Data Literacy: Surveys, Samples & Bias","Read percentages, samples and survey findings with appropriate caution.","Strategy & critical thinking",2],
+["Stakeholder Mapping & Field Research","Identify affected groups, decision-makers, incentives and evidence gaps.","Strategy & critical thinking",2],
+["Governance Case Study & Review","Analyse a real public-service challenge using evidence and stakeholders.","Strategy & critical thinking",2],
+["GDP, Growth & Development","Distinguish economic output from broader measures of wellbeing.","Economy & society",3],
+["Inflation, Interest Rates & the RBI","Understand monetary policy, borrowing costs and trade-offs.","Economy & society",3],
+["Government Budgets, Tax & Public Spending","Learn how revenue, expenditure, deficits and priorities connect.","Economy & society",3],
+["Jobs, Skills & Labour Force Participation","Explore employment, informal work, gender gaps and job quality.","Economy & society",3],
+["Education, Health & Human Development","Compare access, quality, outcomes and inequalities in services.","Economy & society",3],
+["Gender, Society & Social Inequality","Examine how social norms and institutions shape opportunity.","Economy & society",3],
+["Climate, Agriculture & Rural Livelihoods","Connect climate risks, farming, incomes and public responses.","Economy & society",3],
+["Clear Speaking: Structure Your Thoughts","Practise opening, three key points, evidence and a strong close.","Communication",4],
+["Writing Clearly for Work","Turn a long or vague message into a concise, audience-focused note.","Communication",4],
+["Vocabulary, Fluency & Active Listening","Build useful language through context, paraphrasing and listening.","Communication",4],
+["Persuasion, Evidence & Respectful Disagreement","Make a case, acknowledge counterarguments and explain trade-offs.","Communication",4],
+["Presentation & Question Handling","Deliver a short briefing and respond to challenging follow-up questions.","Communication",4],
+["Branding, Marketing & Consumer Behaviour","Understand audiences, positioning, insight, messaging and activation.","Strategy & critical thinking",5],
+["Strategic Problem-Solving & Decision-Making","Define the problem, identify root causes, compare options and measure impact.","Strategy & critical thinking",5],
+["Media, Technology & Society","Assess how platforms, algorithms and information ecosystems shape debate.","Current affairs",5],
+["Final Synthesis & Personal Knowledge Review","Present a five-minute briefing and set your next 30-day learning goals.","Communication",5]
+];
+const phases=[
+{n:1,title:"Current Affairs & India's Context",desc:"Stay informed. Understand the bigger picture.",days:"Days 1–7",emoji:"▤"},
+{n:2,title:"Governance & Public Policy",desc:"Understand systems, institutions and policy delivery.",days:"Days 8–14",emoji:"⌂"},
+{n:3,title:"Economy, Society & Development",desc:"Connect people, economy and real-world impact.",days:"Days 15–21",emoji:"▥"},
+{n:4,title:"Communication & Professional Skills",desc:"Speak, write and express with confidence.",days:"Days 22–26",emoji:"↗"},
+{n:5,title:"Strategic Thinking & Application",desc:"Build opinions, solve problems and think ahead.",days:"Days 27–30",emoji:"✧"}
+];
+const quizzes=[
+{q:"What is inflation?",opts:["A rise in every person's salary","A sustained rise in the general price level","A fall in the amount of money in circulation","A one-off change in the price of one product"],correct:1,why:"Inflation is a sustained increase in the overall price level. A single product becoming more expensive does not, by itself, mean general inflation."},
+{q:"If the RBI raises its policy repo rate, what is a possible effect?",opts:["Every price falls immediately","Borrowing can become more expensive, potentially cooling demand","All salaries automatically rise","Government spending stops"],correct:1,why:"Higher policy rates can pass through to borrowing costs, reducing some spending and demand over time. The effect is neither immediate nor guaranteed."},
+{q:"Why can rising food prices become a major public issue?",opts:["Food has no role in household budgets","They can squeeze household purchasing power, especially for lower-income families","They always increase real wages","They affect only farmers"],correct:1,why:"Food is a large share of many household budgets. Price rises can reduce money available for other needs and affect farmers, consumers and public policy."}
+];
+const $=id=>document.getElementById(id);
+const key="knowledgeUpgradeHub.v1";
+let state={completed:[],notes:[],quizScores:[],reflection:"",currentDay:1};
+try{const saved=JSON.parse(localStorage.getItem(key)||"null");if(saved)state={...state,...saved}}catch(e){}
+let quizIndex=0, quizAnswers={};
+function save(){try{localStorage.setItem(key,JSON.stringify(state))}catch(e){toast("Could not save in this browser. Export your data as a backup.")}renderStats()}
+function toast(msg){const t=$("toast");t.textContent=msg;t.style.display="block";clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.style.display="none",2400)}
+function chatPrompt(day,kind="lesson"){const [title,desc,topic,phase]=curriculum[day-1];const prompt=`You are my personal Knowledge Upgrade tutor. Continue my 30-day all-round learning programme. I have 45 minutes per day and prefer interactive lessons, quizzes and discussions. I want to improve current affairs, topic-wise knowledge, English communication, articulation and critical thinking.\\n\\nDay ${day}/30: ${title}.\\nGoal: ${desc}\\n\\nPlease ${kind==="quiz"?"review my quiz understanding with explanations and follow-up questions":kind==="speak"?"run a communication drill, ask me to speak or write first, then give constructive feedback":"guide me step by step through a 45-minute session: 5-minute warm-up, 15-minute lesson, 10-minute quiz/discussion, 10-minute communication drill and 5-minute reflection. Ask one question at a time, wait for my response, correct misconceptions gently, and distinguish verified facts from opinion. For current affairs, verify recent facts and give dated reliable sources."}`;return "https://chatgpt.com/?q="+encodeURIComponent(prompt)}
+function openChat(day=state.currentDay,kind="lesson"){window.open(chatPrompt(day,kind),"_blank","noopener")}
+function go(view){document.querySelectorAll(".view").forEach(x=>x.classList.remove("active"));$("view-"+view).classList.add("active");document.querySelectorAll("nav button").forEach(x=>x.classList.toggle("active",x.dataset.view===view));if(view==="daily")renderLesson();if(view==="plan")renderDays();if(view==="notes")renderNotes();if(view==="quiz")renderQuiz();if(view==="progress")renderProgress();window.scrollTo({top:0,behavior:"smooth"})}
+document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()=>go(b.dataset.view)));
+document.querySelectorAll("[data-goto]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.goto)));
+function renderPhases(){$("phaseGrid").innerHTML=phases.map(p=>`<div class="phase"><div class="emoji">${p.emoji}</div><strong>Phase ${p.n}<br>${p.title}</strong><small>${p.desc}</small><p style="font-size:11px;margin:9px 0 0">${p.days}</p></div>`).join("")}
+function renderStats(){const done=state.completed.length,pct=Math.round(done/30*100),scores=state.quizScores.map(s=>s.score);$("progressCount").textContent=done+" / 30";$("progressPercent").textContent=pct+"%";$("mainProgress").style.width=pct+"%";$("progressBig").style.width=pct+"%";$("statDone").textContent=done;$("statQuiz").textContent=state.quizScores.length;$("statAvg").textContent=scores.length?Math.round(scores.reduce((a,b)=>a+b,0)/scores.length)+"%":"—";$("phaseCount").textContent=done+" of 30 days complete";$("planProgress").textContent=done+" / 30 complete";$("progressMessage").textContent=done===0?"Your first step starts here.":done<7?"You're building your learning rhythm. Keep going.":done<20?"You're building a strong foundation. Review and apply what you learn.":done<30?"You're close to the finish. Focus on synthesis and confidence.":"30 days completed — celebrate your progress and set a new goal.";const day=state.currentDay; $("todayDayLabel").textContent="Day "+day;$("todayTitle").textContent=curriculum[day-1][0];$("todayDesc").textContent=curriculum[day-1][1];$("todayStatus").textContent=state.completed.includes(day)?"Completed":"Ready to start";$("startToday").textContent=state.completed.includes(day)?"Review Day "+day:"Start Day "+day+" →";$("recentActivity").innerHTML=[...Array(5)].map((_,i)=>{let d=i===0?day:Math.max(1,day-i);return `<div class="activityrow"><span class="dot ${state.completed.includes(d)?"done":""}"></span><div class="grow"><strong>Day ${d} — ${escapeHtml(curriculum[d-1][0])}</strong><small>${state.completed.includes(d)?"Completed":"Not completed"}</small></div></div>`}).join("")}
+function renderLesson(){const d=state.currentDay,[title,desc,topic,phase]=curriculum[d-1];$("lessonEyebrow").textContent=`Day ${d} · ${topic}`;$("lessonTitle").textContent=title;$("lessonSubtitle").textContent="45 minutes · Learn, practise, reflect";$("lessonStatus").textContent=state.completed.includes(d)?"Completed":"In progress";$("lessonContent").innerHTML=`<p>${escapeHtml(desc)}</p><h3>Step 1 · Warm-up & recall (5 min)</h3><p>Write what you already know about this topic, what you are unsure about, and one question you would like answered.</p><h3>Step 2 · Learn (15 min)</h3><p>Use your personalised ChatGPT session to explore the core concepts, definitions, examples and real-world context. Ask for simple explanations first, then build depth.</p><h3>Step 3 · Quiz & discussion (10 min)</h3><p>Test your understanding without looking at your notes. Explain why an answer is right, not just which option is correct.</p><h3>Step 4 · Communication drill (10 min)</h3><p>Explain the topic as if you were speaking to a colleague who is intelligent but unfamiliar with it. Aim for a clear opening, two or three points and a concise conclusion.</p><h3>Step 5 · Reflection (5 min)</h3><ul><li>What are the three most useful things I learned?</li><li>What is still unclear?</li><li>Where could I apply this knowledge?</li></ul><div class="notice">Learning note: current-affairs facts can change. Ask ChatGPT to verify recent developments with dated, reliable sources and distinguish fact from analysis.</div>`;$("completeDay").textContent=state.completed.includes(d)?"✓ Day completed":"Mark day complete ✓";$("nextDay").disabled=d===30}
+function renderDays(){const filter=$("filterPhase").value;const html=curriculum.map((d,i)=>({d,i})).filter(x=>filter==="all"||String(x.d[3])===filter).map(({d,i})=>`<div class="daycard ${state.completed.includes(i+1)?"done":""}"><div class="daytop"><span class="pill">Day ${i+1}</span><span>${state.completed.includes(i+1)?"✓":"○"}</span></div><strong>${escapeHtml(d[0])}</strong><p>${escapeHtml(d[1])}</p><small class="muted">${escapeHtml(d[2])}</small><button class="btn small" onclick="selectDay(${i+1})">Open lesson →</button><button class="btn small soft" onclick="openChat(${i+1})">ChatGPT prompt ↗</button></div>`).join("");$("dayList").innerHTML=html}
+function selectDay(d){state.currentDay=d;save();go("daily")}
+$("filterPhase").addEventListener("change",renderDays);
+function renderNotes(){$("notesList").innerHTML=state.notes.length?state.notes.slice().reverse().map(n=>`<div style="padding:12px 0;border-bottom:1px solid var(--line)"><div class="row between"><strong>${escapeHtml(n.title)}</strong><button class="btn small" onclick="deleteNote('${n.id}')">Delete</button></div><small class="muted">${escapeHtml(n.topic)} · ${new Date(n.date).toLocaleDateString()}</small><p style="white-space:pre-wrap;margin-bottom:0">${escapeHtml(n.body)}</p></div>`).join(""):'<p class="muted">Your saved notes will appear here.</p>'}
+function deleteNote(id){state.notes=state.notes.filter(n=>n.id!==id);save();renderNotes();toast("Note deleted")}
+$("saveNote").addEventListener("click",()=>{const title=$("noteTitle").value.trim(),body=$("noteBody").value.trim();if(!title||!body){toast("Add a title and some notes first.");return}state.notes.push({id:Date.now().toString(36),title,topic:$("noteTopic").value,body,date:new Date().toISOString()});save();$("noteTitle").value="";$("noteBody").value="";renderNotes();toast("Note saved in this browser")});
+$("clearNoteForm").addEventListener("click",()=>{$("noteTitle").value="";$("noteBody").value=""});
+function renderProgress(){$("reflection").value=state.reflection||"";$("completedList").innerHTML=state.completed.length?state.completed.slice().sort((a,b)=>a-b).map(d=>`<div class="activityrow"><span class="dot done"></span><div><strong>Day ${d} — ${escapeHtml(curriculum[d-1][0])}</strong><small>Completed</small></div></div>`).join(""):'<p class="muted">No completed days yet — your first one will appear here.</p>'}
+$("saveReflection").addEventListener("click",()=>{state.reflection=$("reflection").value;save();toast("Reflection saved")});
+function renderQuiz(){const q=quizzes[quizIndex];$("quizTitle").textContent="Day 1 knowledge check";$("quizCounter").textContent=`Question ${quizIndex+1} of ${quizzes.length}`;$("quizArea").innerHTML=`<h3>${quizIndex+1}. ${q.q}</h3>${q.opts.map((o,i)=>`<label class="quiz-option"><input type="radio" name="answer" value="${i}" ${quizAnswers[quizIndex]===i?"checked":""}>${escapeHtml(o)}</label>`).join("")}`;$("quizBack").disabled=quizIndex===0;$("quizNext").textContent=quizIndex===quizzes.length-1?"Finish quiz ✓":"Check answer →";$("quizFeedback").innerHTML=""}
+$("quizBack").addEventListener("click",()=>{if(quizIndex>0){quizIndex--;renderQuiz()}});
+$("quizNext").addEventListener("click",()=>{const selected=document.querySelector('input[name="answer"]:checked');if(!selected){toast("Choose an answer first.");return}const q=quizzes[quizIndex];quizAnswers[quizIndex]=Number(selected.value);const correct=quizAnswers[quizIndex]===q.correct;$("quizFeedback").innerHTML=`<div class="card" style="background:${correct?"#e9f8f0":"#fff6e8"};box-shadow:none"><strong>${correct?"Correct!":"Not quite — here's why."}</strong><p>${escapeHtml(q.why)}</p></div>`;if(quizIndex<quizzes.length-1){quizIndex++;setTimeout(renderQuiz,850)}else{const score=Math.round(quizzes.reduce((n,q,i)=>n+(quizAnswers[i]===q.correct?1:0),0)/quizzes.length*100);state.quizScores.push({day:1,score,date:new Date().toISOString()});save();$("quizCounter").textContent="Complete";$("quizNext").disabled=true;$("quizFeedback").innerHTML=`<div class="card" style="margin-top:10px"><h3>Quiz complete: ${score}%</h3><p>Review any missed answers, then explain inflation in your own words.</p><button class="btn primary" onclick="openChat(1,'quiz')">Discuss my results in ChatGPT ↗</button><button class="btn" onclick="resetQuiz()">Try again</button></div>`;toast("Quiz score saved") }});
+function resetQuiz(){quizIndex=0;quizAnswers={};$("quizNext").disabled=false;renderQuiz()}
+$("completeDay").addEventListener("click",()=>{const d=state.currentDay;if(!state.completed.includes(d))state.completed.push(d);save();renderLesson();renderDays();toast("Day "+d+" marked complete")});
+$("nextDay").addEventListener("click",()=>{if(state.currentDay<30){state.currentDay++;save();renderLesson();window.scrollTo({top:0,behavior:"smooth"})}});
+$("startToday").addEventListener("click",()=>go("daily"));
+$("lessonChat").addEventListener("click",()=>openChat(state.currentDay));
+$("quizChat").addEventListener("click",()=>openChat(state.currentDay,"quiz"));
+$("chatCurrent").addEventListener("click",()=>openChat(state.currentDay));
+$("exportData").addEventListener("click",()=>{const blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="knowledge-upgrade-backup.json";a.click();URL.revokeObjectURL(a.href);toast("Progress backup exported")});
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+renderPhases();renderStats();renderLesson();renderDays();renderNotes();renderProgress();renderQuiz();
+</script>
+</body>
+</html>
